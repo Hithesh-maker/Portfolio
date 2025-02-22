@@ -10,7 +10,7 @@ body {
 }
 
 body.light-mode {
-    background: #f0f0f0; /* Soft light gray */
+    background: #f0f0f0;
     color: #333;
 }
 
@@ -60,7 +60,7 @@ header {
 }
 
 body.light-mode header {
-    background: rgba(240, 240, 240, 0.9); /* Soft light gray */
+    background: rgba(240, 240, 240, 0.9);
 }
 
 .logo h1 {
@@ -166,6 +166,13 @@ body.light-mode #theme-toggle:hover {
     animation: fadeIn 2s ease-in-out;
 }
 
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
 .btn-main {
     background: linear-gradient(135deg, #007bff, #00bfff);
     color: white;
@@ -176,6 +183,9 @@ body.light-mode #theme-toggle:hover {
     text-decoration: none;
     transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
     animation: fadeInUp 1.5s ease-in-out;
+    flex: 1 1 auto; /* Allow buttons to wrap and grow */
+    text-align: center;
+    max-width: 200px; /* Limit button width */
 }
 
 .btn-main:hover {
